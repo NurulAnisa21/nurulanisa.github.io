@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="shortcut icon" href="image/favicon (1).ico">
+<link rel="stylesheet" type="text/css" href="css/akademik.css">
+
+</head>
+
+<body>
+<br><br>
+	<img src="images/banner.jpg">
+<!--Menu Navbar-->
+<div class="menu-satu">
+    <ul class="topnav"><b>
+                 <li><a href="index.html">Beranda</a></li>
+                  <li><a href="mahasiswa.html">Mahasiswa</a></li>
+                  <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                  <li><a href="staff.html">Staff Pengajar</a></li>
+                  <li><a href="berita.html">Berita</a></li>
+                  <li><a href="contact.html">Kontak Kami</a></li>
+                  <li></li>
+      <li class="icon">
+                    <a href="javascript:void(0);" onClick="myFunction()">☰</a>
+      </li> 
+                   
+  </ul>
+                 
+               
+  <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                    function myFunction() {
+                        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+                    }
+					 </script></div>
+</div>
+
+ <p>&nbsp;</p>
+ <div class="text-border">
+					<center><p>Pendaftaran</p></center>
+</div>
+        <br /><br />
+<div class="rowww">
+  <div class="columnnn" style="background-color:#;">
+  	<center>
+      <p><img src="images/prsedur.png" /></p>
+      <h2>Prosedur</h2>
+Langkah-langkah Pendaftaran yang harus di ketahui</p>
+<button class="buttonn" style="vertical-align:middle"><a href="prosedur.html"><span> Lihat Selanjutnya</span></a></button></center>
+  </div>
+  
+  <div class="columnnn" style="background-color:#;">
+    <center>
+    <img src="images/moneyy.png" /> 
+    <h2>Rincian Biaya</h2>
+Daftar Biaya Perkuliahan selama Persemester</p>
+<button class="buttonn" style="vertical-align:middle"><a href="rincian.html"><span> Lihat Selanjutnya</span></a></button></center>
+  </div>
+  
+  
+  
+  
+  
+  <div class="columnnn" style="background-color:#;">
+    <center>
+    <img src="images/pmb.png" /> 
+    <h2>Pendaftaran</h2>
+Formulir Pendaftaran Mahasiswa Baru</p>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Daftar</button>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="formprosespendaftaran.php" method="post">
+    <div class="container">
+    <h2>Form Pendaftaran</h2>
+      <input type="text" placeholder="Enter Nama Lengkap" name="namamahasiswa" required> 
+      <input type="text" placeholder="Enter Nomor Handphone" name="nomorhandphone" required>
+      <input type="text" placeholder="Enter Nomor Telephone Rumah" name="nomorrumah" required>
+      <input type="text" placeholder="Enter Alamat Rumah" name="alamatrumah" required>
+      <input type="text" placeholder="Enter Alamat Email" name="alamatemail" required>
+      <br /><br />
+    
+      <label>Jenis Kelamin</label> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+		<span><input type="radio" name="jeniskelamin" value="Perempuan"> Perempuan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="jeniskelamin" value="Laki-laki" > Laki-laki </span> <br /><br />
+            <select name="kelas" class="select-field">
+                      <option>--PILIH KELAS--</option>
+                      <option value="Reguler">Reguler </option>
+                      <option value="Karyawan">Karyawan</option>
+         			  </select><br /><br>
+			
+              <select name="fakultas" class="select-field">
+                      <option>--PILIH FAKULTAS--</option>
+                      <option value="Teknologi Informasi">Dept. Teknologi Informasi</option>
+                      <option value="Fisika">Dept. Fisika</option>
+                      <option value="Hukum Internasional">Dept. Hukum Internasional</option>
+         			  </select><br /><br>
+            
+              <select name="gelombang" class="select-field">
+                      <option>--PILIH Gelombang--</option>
+                      <option value="Gelombang 1">Geombang I</option>
+                      <option value="Gelombang 2">Geombang II</option>
+                      <option value="Gelombang 3">Geombang III</option>
+
+         			  </select><br /><br>
+        
+      <button type="submit">Daftar</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+<!--footer-->
+<div class="footer">
+              <center>
+<a href="facebook.com">
+<img class="img-circle" src="images/fb.png"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/ig.png"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/linked.jpg"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/twitter.png"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/yt.png"/></a>
+	</center>
+     </div>
+

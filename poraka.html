@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/akademik.css">
+<link rel="shortcut icon" href="images/favicon (1).ico">
+  <style>
+imggg {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+<br><br>
+	
+    <img src="images/banner.jpg">
+    
+<!--Menu Navbar-->
+<div class="menu-satu">
+    <ul class="topnav"><b>
+                         <li><a href="index.html">Beranda</a></li>
+                  <li><a href="mahasiswa.html">Mahasiswa</a></li>
+                  <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                  <li><a href="staff.html">Staff Pengajar</a></li>
+                  <li><a href="berita.html">Berita</a></li>
+                  <li><a href="contact.html">Kontak Kami</a></li>
+                  <li></li>
+                  
+      <li class="icon">
+                    <a href="javascript:void(0);" onClick="myFunction()">☰</a>
+      </li> 
+                   
+  </ul>
+                 
+               
+  <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                    function myFunction() {
+                        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+                    }
+					 </script></div>
+</div>
+<br />
+ <div class="text-border">
+					<center><p>Portal Akademik</p></center>
+</div>
+<br /><br />
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+ INFORMASI <br />
+Username dan Password untuk mahasiswa baru dapat ditanyakan melalui Admin Kampus.
+</div>
+<br /><br /><br />	
+<p>&nbsp; Por-aka adalah portal bagi civitas akademik Institut Teknologi Jakarta.</p>
+
+<p>&nbsp; Jika mengalami kendala dalam penggunaan Palawa.UGM, silakan baca FAQ (Frequently Asked Questions).</p>
+
+<p>&nbsp; Jika FAQ belum menjawab permasalahan yang Saudara alami, silakan hubungi bagian akademik masing-masing unit </p>
+<p>&nbsp; (Fakultas/Sekolah/Departemen) atau Direktorat Pendidikan dan Pengajaran.</p>
+<p>&nbsp; Untuk mempermudah penelusuran, pastikan menggunakan email Mahasiswa dan mencantumkan NIU/NIP.</p>
+
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<br /><Br /><br />
+<!--footer-->
+<div class="footer">
+              <center>
+                <a href="facebook.com"><img class="img-circle" src="images/fb.png"/></a>
+                  
+                    <a href="facebook.com">
+                    <img class="img-circle" src="images/ig.png"/></a>
+                  
+                    <a href="facebook.com">
+                    <img class="img-circle" src="images/linked.jpg"/></a>
+                  
+                    <a href="facebook.com">
+                    <img class="img-circle" src="images/twitter.png"/></a>
+                  
+                    <a href="facebook.com">
+                    <img class="img-circle" src="images/yt.png"/></a>                
+  				</center>
+     </div>
+	
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>

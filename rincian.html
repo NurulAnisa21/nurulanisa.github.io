@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="shortcut icon" href="image/favicon (1).ico">
+<link rel="stylesheet" type="text/css" href="css/akademik.css">
+  <style>
+img {
+   width: 100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+<br><br>
+	<img src="images/banner.jpg">
+<!--Menu Navbar-->
+<div class="menu-satu">
+    <ul class="topnav"><b>
+                    <li><a href="index.html">Beranda</a></li>
+                  <li><a href="mahasiswa.html">Mahasiswa</a></li>
+                  <li><a href="pendaftaran.html">Pendaftaran</a></li>
+                  <li><a href="staff.html">Staff Pengajar</a></li>
+                  <li><a href="berita.html">Berita</a></li>
+                  <li><a href="contact.html">Kontak Kami</a></li>
+                  <li></li>
+                  
+      <li class="icon">
+                    <a href="javascript:void(0);" onClick="myFunction()">☰</a>
+      </li> 
+                   
+  </ul>
+                 
+               
+  <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                    function myFunction() {
+                        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+                    }
+					 </script></div>
+</div>
+
+ <p>&nbsp;</p>
+ <div class="text-border">
+					<center><p>Perincian Biaya Kuliah</p></center>
+</div>
+        <br /><br />
+        
+   <!--Prosedur-->
+   
+<button class="accordion">Rincian Biaya</button>
+<div class="panel">
+     <ul>
+              	<li><font size="4">Rp. (Sesuai Per Gelombang)/ Semester</font><br />
+                	<u><font size="3">Biaya Tersebut Termasuk :</font></u><br />
+                    <i><font size="2">BPP Pokok, Biaya SKS, Biaya Praktikum & Biaya Ujian(Kecuali Ujian Her)</font></i></li><br />
+                <li><font size="4">Kuliah Sore/Malam</font><br />
+                	<font size="3">Dikenakan biaya kuliah tambahan sebesar Rp. 500.000,-</font> </li><br />
+                <li><font size="4">Biaya Prakuliah</font> <br />
+                	<font size="3">Sebesar Rp. 1.000.000,- untuk Biaya administrasi, Orientasi Akademik & Seminar Motivasi <br />
+                    Jaket Almamater, e-KTM (Elektronik Kartu Tanda Mahasiswa) dibayarkan bersamaan dengan biaya kuliah.</font></li><br />
+                <li><font size="4">Pembayaran</font><br />
+                	<font size="3">Pendaftaran Online Rp.200.000,- dan biaya kuliah dibayarkan melalui Virtual Account Permata Bank, <br />
+                    Virtual Account BCA, Virtual Account Mandiri, Indomaret dan Alfa Group</font></li>
+              </ul>
+</div>
+
+<button class="accordion">Rincian Pembayaran</button>
+<div class="panel">
+   <!-- Trigger/Open The Modal -->
+<button id="myBtn">Rincian</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Rincian Pembayaran</h2>
+    </div>
+    <div class="modal-body">
+    <img src="images/gel 1.JPG" /><br />
+    
+    <img src="images/gel 2.JPG" /><br />
+    
+    <img src="images/gel 3.JPG" /><br />
+    </div>
+    <div class="modal-footer">
+      <h3>&copy; I T J</h3>
+    </div>
+  </div>
+</div></div>
+
+<button class="accordion">Periode Pendaftaran</button>
+<div class="panel">
+ <img src="images/periode.JPG" />
+</div>
+
+<!--footer-->
+<br />
+<div class="footer">
+              <center>
+<a href="facebook.com">
+<img class="img-circle" src="images/fb.png"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/ig.png"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/linked.jpg"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/twitter.png"/></a>
+
+<a href="facebook.com">
+<img class="img-circle" src="images/yt.png"/></a>
+	</center>
+     </div>
+     
+   
+        
+<!--Tab Accordion-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>        
+
+<!--Script modal box-->  
+   
+   <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

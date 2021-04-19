@@ -1,0 +1,4 @@
+bisa CRUD aktif
+login ada di index , di menu login, nanti user nya bikin di dataabase aja, kalo punya gue anisadewi passwrd nya nurul12345
+nama databasenya sekolah 
+tengkyu

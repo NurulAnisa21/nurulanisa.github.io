@@ -1,0 +1,481 @@
+/**********************BAGIAN INDEX.HTML************************/
+
+
+/*********************** Navbar *****************************/
+
+.akademik{
+	background-color:#eee;
+}
+ul.topnav {
+     overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+ul.topnav li {float: left;}
+ 
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 12px;
+}
+ 
+ul.topnav li a:hover {background-color: #111;
+  border-bottom: 3px solid red;}
+ 
+ul.topnav li.icon {display: none;}
+ 
+ #myVideo {
+  width: 100%; 
+  height: 100%;
+  background-color:#000000;
+}
+
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
+*/
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }	
+  #myVideo {
+  width: 100%; 
+  height: 100%;
+  top:100px;
+}
+}
+ 
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*********************** Tab Content Header *****************************/
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#London {background-color:white	;}
+#Paris {background-color:white;}
+#Tokyo {background-color:white;}
+#Oslo {background-color:white;}
+
+
+/***********************Slide Show*****************************/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 11px;
+	width: 100%;
+	text-align: center;
+	left: -204px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+/***********************Video*****************************/
+* {
+  box-sizing: border-box;
+}
+#myVideo {
+  width: 100%; 
+  height: 100%;
+  background-color:#000000;
+}
+
+/***********************Login*****************************/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/***********************Isi Content INDEX//Table*****************************/
+/* Table */
+		table {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+
+		}
+		.demo-table {
+			border-collapse: collapse;
+			font-size: 13px;
+					}
+		.demo-table th, 
+		.demo-table td {
+			border-bottom: 1px solid #FFF;
+			border-left: 1px solid #FFF;
+			padding: 7px 17px;
+		}
+		.demo-table th, 
+		.demo-table td:last-child {
+			border-right: 1px solid #FFF;
+		}
+		.demo-table td:first-child {
+			border-top: 1px solid #FFF;
+		}
+		.demo-table td:last-child{
+			border-bottom: 0;
+		}
+		caption {
+			caption-side: top;
+			margin-bottom: 10px;
+		}
+		
+		/* Table Header */
+		.demo-table thead th {
+			background-color: #FFF;
+			color: #FFF;
+			border-color: #FFF; !important;
+			text-transform: uppercase;
+		}
+		
+		/* Table Body */
+		.demo-table tbody td {
+			color: #000000;
+		}
+		
+		.demo-table tbody tr:nth-child(odd) td {
+			background-color: #FFFFFF;
+		}
+		.demo-table tbody tr:hover th,
+		.demo-table tbody tr:hover td {
+
+			border-color: #FFF;
+			transition: all .2s;
+		}
+
+/* Table 2*/
+		table2 {
+			margin: auto;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+			font-size: 12px;
+
+		}
+		.demo-table2 {
+			border-collapse: collapse;
+			font-size: 13px;
+					}
+		.demo-table2 th, 
+		.demo-table2 td {
+			border-bottom: 1px solid #eee;
+			border-left: 1px solid #eee;
+			padding: 7px 17px;
+		}
+		.demo-table2 th, 
+		.demo-table2 td:last-child {
+			border-right: 1px solid #eee;
+		}
+		.demo-table2 td:first-child {
+			border-top: 1px solid #fff;
+		}
+		.demo-table2 td:last-child{
+			border-bottom: 0;
+		}
+		caption {
+			caption-side: top;
+			margin-bottom: 10px;
+		}
+		
+		/* Table Header */
+		.demo-table2 thead th {
+			background-color: #eee;
+			color: #eee;
+			border-color: #eee; !important;
+			text-transform: uppercase;
+		}
+		
+		/* Table Body */
+		.demo-table2 tbody td {
+			color: #000000;
+		}
+		
+		.demo-table2 tbody tr:nth-child(odd) td {
+			background-color: #FFFFFF;
+		}
+		.demo-table2 tbody tr:hover th,
+		.demo-table2 tbody tr:hover td {
+
+			border-color: #eee;
+			transition: all .2s;
+		}
+
+/********************************Footer*********************************/
+
+.footer {
+	 position: inherit;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:60px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding-top:10px;
+}
+
+.img-circle {
+	height:33px;
+	width:33px;
+}
+
+/********************************Pendaftaran*********************************/
+
+.buttonn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+.buttonn:hover {
+  opacity: 0.8;
+}
+
+	 
+	.input[type=radio]{
+	 margin: 10px 10px 0 10px;
+	} 
+	 
+	.label{
+	 color: #53bd84;
+	 text-shadow: 0 1px 0 #fff;
+	 font-size: 14px;
+	 font-weight: bold;
+	}
+	 
+	.input[type=submit]{
+	 font-size: 16px;
+	 background: linear-gradient(#53bd84 5%, #fff 100%);
+	 color: #4E4D4B;
+	 font-weight: bold;
+	 cursor: pointer;
+	 width: 50%;
+	 padding: 10px 0;
+	 outline:none;
+	 
+	}.select-field {
+	width: 50%;
+	 height: 33px;}
+	 
